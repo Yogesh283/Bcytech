@@ -1,0 +1,107 @@
+html { position: relative; width: 100%; height: 100%; }
+body { font-family: 'Montserrat', sans-serif; margin: 0; width: 100%; height: 100%; }
+
+/nav8/
+video { width: 100%; height: 100%; position: absolute; }
+header nav { display: flex; justify-content: space-between; align-items: center; padding: 11px; background: rgba(22, 34, 57, 0.95); position: fixed; width: 100%; height: 66px; z-index: 999; }
+header nav hd logo { font-size: 36px; font-weight: 800; color: #fff; }
+header nav hd logo em { color: #f5a425; font-style: normal; }
+header nav bd ul { display: flex; margin: 0; padding-left: 44px; }
+header nav bd ul li { list-style-type: none; margin: 11px; }
+header nav bd ul li a { padding: 12px 22px; text-decoration: none; letter-spacing: 0.5px; font-size: 13px; color: #fff; font-weight: 700; text-transform: uppercase; }
+a:hover { border: 2px solid #f5a425; }
+
+.grad { position: relative; display: grid; margin: 0 11%; padding: 14% 0; }
+.grad h6 { margin: 0; font-size: 18px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 11px; text-align: center; color: #fff; }
+.grad h2 { font-size: 55px; text-transform: uppercase; margin: 22px 0; text-align: center; color: #fff;}
+.grad h2 em { color: #f5a425; font-style: normal; font-weight: 900; }
+.grad btn { margin: auto; }
+.grad btn a { display: inline-block; background: #f5a425; color: #fff; padding: 12px 20px; text-decoration: none; text-transform: uppercase; font-size: 13px; font-weight: 700; }
+
+
+
+/aera/
+area { display: block; position: relative; }
+
+
+/sidebar/
+sidebar { position: absolute; background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/choosing-bg.jpg); width: 100%; height: 100%; background-repeat: no-repeat; background-size: contain; background-color: #172238; padding-bottom: 100px; }
+sidebar hd { display: flex; justify-content: center; margin-bottom: 70px; }
+sidebar hd h3 { margin-top: 100px; font-size: 18px; font-weight: 500; color: #fff; letter-spacing: 0.5px; border: 2px solid rgba(250, 250, 250, 0.1); padding: 15px 20px; width: 24%; margin-bottom: 0; }
+sidebar hd h3:before { content: ''; position: absolute; background: rgba(250, 250, 250, 0.1); width: 1px; height: 100px; top: 0; left: 50%; }
+sidebar bd { display: block; }
+sidebar bd ul { display: grid; grid-template-columns: 33% auto 33%; padding: 0 7%; }
+sidebar bd ul li { list-style-type: none; text-align: center; padding-bottom: 30px; }
+sidebar bd ul li a { text-decoration: none; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #fff; }
+sidebar bd ul li a:after { transition: all 0.3s; width: 10px; height: 10px; background-color: #fff; content: ''; position: absolute; left: 50%; transform: translate(-50%); top: 41%; }
+sidebar bd ul li a:before { transition: all 0.3s; width: 25px; height: 25px; border: 2px solid transparent; background-color: transparent; content: ''; position: absolute; left: 20%; transform: translate(-50%); bottom: -5px; }
+sidebar ft { margin-top: 60px; text-align: left; display: grid; grid-template-columns: auto 50%; padding: 0 2%; }
+sidebar ft div { display: block; padding: 0 11px; }
+sidebar ft div i { display: block; }
+sidebar div i img { width: 100%; height: 266px; overflow: hidden; padding-right: 45px; }
+sidebar ft div h4 { margin-top: 60px; font-size: 32px; font-weight: 700; letter-spacing: 1px; color: #fff; margin-bottom: 30px; }
+sidebar ft div p { color: #fff; font-size: 15px; line-height: 28px; }
+
+
+
+
+/main/
+
+main .chat { position: absolute; background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/coming-soon-bg.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; height: 100%; margin-top: 66%; padding: 120px 0px; background-color: #172238; display: grid; grid-template-columns: 58% auto; align-items: center;}
+.chat hd { padding: 0 22px; }
+.chat hd div h4 { margin-top: 100px; font-size: 30px; color: #fff; font-weight: 800; letter-spacing: 0.5px; line-height: 40px; margin-bottom: 50px; }
+hd div h4 em { font-style: normal; color: #f5a425; }
+.chat hd div ul { display: flex; padding: unset; }
+.chat hd div ul li { list-style-type: none; width: 22%; height: 140px; float: left; text-align: center; font-size: 48px; font-weight: 800; letter-spacing: 1px; color: #fff; background-color: rgba(250, 250, 250, 0.1); margin-right: 4%; }
+.chat hd div ul li h5 { margin: 0; margin-top: 15px; font-size: 48px; font-weight: 800; letter-spacing: 1px; }
+.chat hd div ul li span { font-size: 18px; text-transform: uppercase; color: #f5a425; font-weight: 500; letter-spacing: 1px; margin-top: 0px; display: block; }
+.chat bd { padding: 0 22px; }
+.chat bd div h6 { font-size: 14px; color: #fff; background-color: rgba(250, 250, 250, 0.2); padding: 40px; text-align: center; line-height: 24px; margin: auto; }
+.chat bd div h6 em { font-style: normal; font-weight: 600; }
+.chat bd div form { background-color: rgba(250, 250, 250, 0.1); padding: 60px 40px; text-align: center; }
+.row input { width: 100%; height: 40px; background-color: rgba(250, 250, 250, 0.1); border-radius: 0px; border: none; outline: none; color: #fff; font-size: 13px; margin-bottom: 20px; letter-spacing: 0.5px; padding: 4px 11px;}
+.row button { margin-top: 10px; background-color: #f5a425; color: #fff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; padding: 12px 20px; display: inline-block; outline: none; box-shadow: none; border: none; }
+
+.mg { position: absolute; margin-top: 142%; background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/choosing-bg.jpg); width: 100%; height: 100%; background-repeat: no-repeat; background-size: contain; background-color: #172238; padding-bottom: 22%; }
+.mg hd { display: flex; justify-content: center; margin-bottom: 70px; }
+.mg hd h3 { margin-top: 100px; font-size: 18px; font-weight: 500; color: #fff; letter-spacing: 0.5px; border: 2px solid rgba(250, 250, 250, 0.1); padding: 15px 20px; width: 24%; margin-bottom: 0; }
+.mg hd h3:before { content: ''; position: absolute; background: rgba(250, 250, 250, 0.1); width: 1px; height: 100px; top: 0; left: 50%; }
+
+.mg bd bl ul { padding: unset; display: flex; margin: 0; }
+.mg bd bl ul li { margin-right: 12px; list-style-type: none; }
+.mg bd bl ul li i img { width: 100%; overflow: hidden; border-radius: 5px 5px 0px 0px; }
+.mg bd bl ul li i { display: flex; }
+
+.lss { padding: 30px; background: #fff; border-radius: 0px 0px 5px 5px; }
+.lss h4 { font-size: 16px; text-transform: uppercase; color: #1e1e1e; font-weight: 700; margin-bottom: 20px; margin-top: 0; }
+.lss p { font-size: 13px; margin-bottom: 25px; line-height: 22px; margin-top: 0; }
+.lss div { display: flex; justify-content: space-between; align-items: center; }
+.lss div a { font-size: 13px; color: #f5a425; text-decoration: none; }
+.mg ft { display: flex; justify-content: center; }
+.mg ft btn { width: 10px; height: 10px; background: #fff; display: block; margin: 50px 10px 0px 10px; }
+
+
+.our { position: absolute; margin-top: 218%; background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/coming-soon-bg.jpg); background-repeat: no-repeat; background-size: cover; display: grid; grid-template-columns: auto auto; padding: 120px 0px; }
+.our hd { padding: 0 14px; }
+.our hd div span { text-transform: uppercase; font-size: 14px; letter-spacing: 0.5px; color: #fff; }
+.our hd div h4 { margin-top: 20px; font-size: 30px; color: #fff; font-weight: 800; letter-spacing: 0.5px; line-height: 40px; margin-bottom: 20px; }
+.our hd div p { font-size: 13px; line-height: 22px; margin-top: 0; margin-bottom: 1em; color: #fff; }
+.our hd div bt a { background-color: #f5a425; color: #fff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; padding: 12px 20px; display: inline-block; text-decoration: none; }
+.our bd { padding: 0 14px; }
+.our bd div i img { width: 100%; height: 100%; }
+.our bd div h4 { position: absolute; z-index: 10; background-color: rgba(250, 250, 250, 0.75); height: 22px; width: 355px; padding: 27px 30px; margin: 0; bottom: 20%; }
+.our bd div h4:before { content: ''; position: absolute; bottom: 10px; right: 15px; width: 60px; height: 60px; top: 11%; left: 77%; border-radius: 50%; background-color: #f5a425; z-index: 10; }
+.our bd div h4:after { content: ''; position: absolute; bottom: 27.5px; right: 20px; top: 33%; left: 82.5%; border: solid 13px transparent; border-left: solid 20px; border-left-color: #fff; z-index: 10; }
+
+.bc { position: absolute; top: 548%; background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/contact-bg.jpg); width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; padding-bottom: 120px; }
+.bc hd { display: flex; justify-content: center; margin-bottom: 70px; }
+.bc hd h3 { margin-top: 100px; position: relative; font-size: 18px; font-weight: 500; color: #fff; letter-spacing: 0.5px; display: inline-block; padding: 15px 20px; border: 2px solid rgba(250, 250, 250, 0.1); }
+.bc hd h3:before { content: ''; position: absolute; background: rgba(250, 250, 250, 0.1); width: 1px; height: 100px; left: 50%; top: -100px; }
+.bc bd div { padding: 0 11px; }
+.bc bd div form { background-color: rgba(250, 250, 250, 0.1); padding: 30px; width: 77%; }
+.bc bd { display: grid; grid-template-columns:55% auto; margin: 0 11px; }
+fieldset { border: none; }
+input { width: 100%; height: 40px; background-color: rgba(250, 250, 250, 0.1); border-radius: 0px; border: none; outline: none; color: #fff; font-size: 13px; margin-bottom: 30px; letter-spacing: 0.5px; }
+textarea { width: 100%; height: 162px; max-height: 262px; min-height: 190px; background-color: rgba(250, 250, 250, 0.1); border-radius: 0px; border: none; outline: none; color: #fff; font-size: 13px; margin-bottom: 30px; letter-spacing: 0.5px; }
+button { background-color: #f5a425; color: #fff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; padding: 12px 20px; display: inline-block; outline: none; box-shadow: none; border: none; }
+.bc bd div i img { width: 98%; height: 98%; }
