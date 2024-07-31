@@ -1,7 +1,6 @@
 html { position: relative; width: 100%; height: 100%; }
 body { font-family: 'Montserrat', sans-serif; margin: 0; width: 100%; height: 100%; }
 
-/nav8/
 video { width: 100%; height: 100%; position: absolute; }
 header nav { display: flex; justify-content: space-between; align-items: center; padding: 11px; background: rgba(22, 34, 57, 0.95); position: fixed; width: 100%; height: 66px; z-index: 999; }
 header nav hd logo { font-size: 36px; font-weight: 800; color: #fff; }
@@ -20,11 +19,11 @@ a:hover { border: 2px solid #f5a425; }
 
 
 
-/aera/
+
 area { display: block; position: relative; }
 
 
-/sidebar/
+
 sidebar { position: absolute; background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/choosing-bg.jpg); width: 100%; height: 100%; background-repeat: no-repeat; background-size: contain; background-color: #172238; padding-bottom: 100px; }
 sidebar hd { display: flex; justify-content: center; margin-bottom: 70px; }
 sidebar hd h3 { margin-top: 100px; font-size: 18px; font-weight: 500; color: #fff; letter-spacing: 0.5px; border: 2px solid rgba(250, 250, 250, 0.1); padding: 15px 20px; width: 24%; margin-bottom: 0; }
@@ -45,7 +44,6 @@ sidebar ft div p { color: #fff; font-size: 15px; line-height: 28px; }
 
 
 
-/main/
 
 main .chat { position: absolute; background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/coming-soon-bg.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; height: 100%; margin-top: 66%; padding: 120px 0px; background-color: #172238; display: grid; grid-template-columns: 58% auto; align-items: center;}
 .chat hd { padding: 0 22px; }
