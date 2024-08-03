@@ -103,3 +103,20 @@ input { width: 100%; height: 40px; background-color: rgba(250, 250, 250, 0.1); b
 textarea { width: 100%; height: 162px; max-height: 262px; min-height: 190px; background-color: rgba(250, 250, 250, 0.1); border-radius: 0px; border: none; outline: none; color: #fff; font-size: 13px; margin-bottom: 30px; letter-spacing: 0.5px; }
 button { background-color: #f5a425; color: #fff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; padding: 12px 20px; display: inline-block; outline: none; box-shadow: none; border: none; }
 .bc bd div i img { width: 98%; height: 98%; }
+@media only screen and (max-width: 999px) {
+header nav { display: grid; grid-template-columns: auto 66px; justify-content: space-between; height: 77px; width: 48%; }
+header nav bd ul { display: none; }
+nav bd i { display: block; max-width: 44px; max-height: 44px; }
+nav bd i svg { max-width: 44px; max-height: 44px; min-width: 44px; min-height: 44px; }
+.grad { margin-top: 23%; width: 172%; }
+sidebar { position: absolute; width: 195%; height: 156%; }
+.chat { position: relative; margin-top: 134%; }
+.mg { position: relative; margin-top: 131%; width: 194%; }
+.our { display: block; position: relative; margin: 0; width: 194%; }
+.bc { position: relative; width: 194%; }
+
+
+
+
+
+}
