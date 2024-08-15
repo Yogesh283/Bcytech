@@ -73,9 +73,31 @@
                 BCY COMPANY
               </span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <script>
+              // Create a button element
+const button = document.createElement('button');
+
+// Set attributes for the button
+button.setAttribute('class', 'navbar-toggler');
+button.setAttribute('type', 'button');
+button.setAttribute('data-toggle', 'collapse');
+button.setAttribute('data-target', '#navbarSupportedContent');
+button.setAttribute('aria-controls', 'navbarSupportedContent');
+button.setAttribute('aria-expanded', 'false');
+button.setAttribute('aria-label', 'Toggle navigation');
+
+// Create a span element and append it to the button
+const span = document.createElement('span');
+button.appendChild(span);
+
+// Optionally, you can add the button to the DOM
+// For example, to add it to a container with id 'navbar':
+const navbar = document.getElementById('navbar');
+navbar.appendChild(button);
+            </script>
+         <!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""></span>
-            </button>
+            </button>-->
 
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
