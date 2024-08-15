@@ -1,3 +1,4 @@
+
 @import url("font-awesome.min.css");
 body {
   font-family: "Poppins", sans-serif;
@@ -435,7 +436,7 @@ a:focus {
 }
 
 .about_section .img_container .img-box img {
-  width: 100%;
+  width: 75%;
 }
 
 .about_section .detail-box {
