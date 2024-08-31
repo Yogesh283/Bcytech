@@ -1,36 +1,64 @@
-const express = require('express');
-const mongoose = require('mongoose');
+import express from 'express';
+import mongoose from 'mongoose';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import MyModel from './model.js'; // Ensure MyModel is correctly exported from model.js
+
+// Resolve __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 
-// Middleware to parse JSON data
+// Middleware to parse JSON and URL-encoded data
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/mydatabase', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log('Connected to MongoDB');
-}).catch(err => {
-    console.log('Error connecting to MongoDB:', err);
+const uri = 'mongodb+srv://Yogesh:umiun9O2PYgpJwf9@cluster0.ib5py.mongodb.net/';
+
+// Connect to MongoDB
+mongoose.connect(uri, { 
+  serverSelectionTimeoutMS: 30000, // 30 seconds
+  connectTimeoutMS: 30000, // 30 seconds
 });
 
-// Sample route to handle data from front-end
-app.post('/submit-data', (req, res) => {
-    // Data received from front-end
-    const data = req.body;
-    console.log('Data received:', data);
-
-    // Save data to MongoDB (assuming a model is created)
-    // Example:
-    // const MyModel = mongoose.model('MyModel', new mongoose.Schema({ name: String, email: String }));
-    // const newData = new MyModel(data);
-    // newData.save().then(() => res.send('Data saved to MongoDB')).catch(err => res.status(500).send(err));
-
-    res.send('Data received on server');
+mongoose.connection.on('connected', () => {
+  console.log('Connected to MongoDB successfully');
 });
 
-const PORT = process.env.PORT || 3000;
+mongoose.connection.on('error', (err) => {
+  console.error('MongoDB connection error:', err);
+});
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Handle GET request to the root route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html')); // Assuming you have an index.html file in your public directory
+});
+
+app.post('/submit', async (req, res) => {
+  try {
+    console.log('Received data:', req.body);
+
+    const newData = new MyModel(req.body);
+    await newData.save();
+
+    console.log('Data saved successfully in MongoDB!');
+    
+    // Serve pop.html after successful submission
+    res.sendFile(path.join(__dirname, 'public', 'pop.html'));
+  } catch (error) {
+    console.error('Error saving data:', error);
+    res.status(400).send('Error: ' + error.message); // Send the error message as the response
+  }
+});
+
+
+
+// Start the server on the specified port
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
