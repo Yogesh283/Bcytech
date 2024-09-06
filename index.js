@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import MyModel from './model.js'; // Ensure MyModel is correctly exported from model.js
 
+
 // Resolve __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
