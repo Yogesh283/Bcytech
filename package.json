@@ -113,11 +113,9 @@
   "devDependencies": {
     "mocha": "^10.7.3"
   },
-  
   "scripts": {
-  "test": "mocha"
-},
-
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yogesh283/Bcytech.git"
