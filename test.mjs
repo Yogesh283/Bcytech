@@ -1,0 +1,8 @@
+import { describe, it } from 'mocha';
+import assert from 'assert';
+
+describe('Example Test', function () {
+  it('should return true', function () {
+    assert.strictEqual(true, true);
+  });
+});
