@@ -115,7 +115,6 @@
     "mocha": "^10.7.3"
   },
   "scripts": {
-    "start" : "node index.js"
     "test": "mocha"
   },
   "repository": {
